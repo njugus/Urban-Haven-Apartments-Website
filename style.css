@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Shadows+Into+Light&display=swap');
+
+
+:root {
+  --primary-color: "Reddit Sans Condensed", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --secondary-color: "Shadows Into Light", cursive;
+}
+
+.heading{
+  font-family: var(--primary-color);
+  font-weight: 900;
+  text-shadow: 9px rgb(196, 32, 32);
+  font-synthesis: none;
+  
+}
+
+
+.nav-bar{
+  border: 2px solid gray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+
+}
+
+.menu{
+  font-family: var(--primary-color);
+  font-weight: 500;
+}
+.menu-list{
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+
+}
