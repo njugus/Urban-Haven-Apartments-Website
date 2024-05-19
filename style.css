@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=Shadows+Into+Light&display=swap');
 
+
+*{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media screen  and (max-width = 600px){
+
+  }
+  .about-wrapper{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 1rem;
+    flex-grow: 0;
+
+  }
+  
 
 :root {
   --primary-color: "Reddit Sans Condensed", sans-serif;
@@ -8,6 +31,7 @@
   font-weight: 400;
   --secondary-color: "Shadows Into Light", cursive;
 }
+
 
 .heading{
   font-family: var(--primary-color);
@@ -17,6 +41,21 @@
   
 }
 
+.heading-haven{
+  font-family: var(--secondary-color);
+  font-weight: 800;
+  font-size: larger;
+  text-decoration: solid black;
+  text-shadow: 1px 1px 2px black;
+  color: red;
+  
+}
+
+.main-header{
+  border: 2px solid gray;
+
+
+}
 
 .nav-bar{
   border: 2px solid gray;
@@ -29,6 +68,8 @@
   background-color: white;
   width: 100%;
 
+
+
 }
 
 .menu{
@@ -39,5 +80,263 @@
   list-style-type: none;
   display: flex;
   gap: 1.5rem;
+  text-decoration: none;
+  flex-wrap: wrap;
 
+}
+
+
+.main-heading{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: var(--secondary-color);
+  text-shadow: 9px rgb(196, 32, 32);
+  font-synthesis: none;
+}
+
+.about{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  
+}
+
+.about-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 3rem;
+
+}
+.img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  
+}
+
+.about-heading{
+  
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  padding: 30px;
+  text-align: center;
+  
+  
+}
+
+.about-img{
+  width: 100%;
+}
+
+.para_1{
+  font-family: var(--primary-color);
+  color: gray;
+}
+
+.heading{
+  font-family: var(--secondary-color);
+  
+}
+
+.product-card{
+  
+}
+
+.space{
+  
+  width: 100%;
+  padding: 10px;
+ 
+  
+}
+
+.product-image{
+  
+  width: 100%;
+  overflow: hidden;
+  padding: 4px;
+ 
+}
+
+ul{
+  list-style-type: none;
+}
+
+.space{
+  width: 25rem;
+  text-align: center;
+  flex-basis: auto;
+  flex-grow: 0.5;
+
+}
+
+.space-img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card{
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.space-heading{
+  font-family: var(--secondary-color);
+  font-size: 1.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.5);
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: #333;
+  background-color: #f0f0f0;
+  background: linear-gradient(45deg, #988ec7, #5b6abb);
+  color: black;
+  border-radius: 5px;
+  font-weight: 900;
+  
+  
+}
+
+.list-item{
+  font-family: var(--primary-color);
+  color: solid gray;
+  
+}
+
+.learn-more{
+  font-family: var(--primary-color);
+  font-weight: 400;
+  background-color: black;
+  color: white;
+  border: 1px solid gray;
+  padding: 7px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.form-input{
+  color: white;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30rem;
+  padding: 25px;
+  row-gap: 20px; 
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  
+}
+
+
+
+label{
+  font-family: var(--primary-color);
+  color: white;
+}
+
+.contact-heading{
+  border: 1px solid gray;
+  padding: 25px;
+  font-family: var(--secondary-color);
+  font-weight: 900;
+  
+}
+.contact-heading-wrapper
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+
+.contact-wrapper{
+  display: flex;
+  justify-content: center;align-items: center;
+  margin-top: 5px;
+  border: 1px solid gray;
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: rgb(218, 212, 212);
+
+
+  
+}
+
+.contact-form{
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-family: var(--primary-color);
+  border-radius: 5px;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.footer h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 10px 0;
+}
+
+.contact-list a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+      width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-wrapper {
+      width: 90%;
+  }
 }
