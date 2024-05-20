@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header class = "main-header">
+    <header class = "main-header" id="home">
       <nav class="nav-bar">
         <h1 class = "heading">
           <p>Urban <span class = "heading-haven">Haven</span> Apartments</p>
@@ -15,35 +15,47 @@
 
         <div class="menu">
           <ul class="menu-list">
-            <li><a href="#" style="text-decoration: none;">Home</a></li>
-            <li><a href="#" style="text-decoration: none;">About</a></li>
-            <li><a href="#" style="text-decoration: none;">Rooms</a></li>
-            <li><a href="#" style="text-decoration: none;">Contact Us</a></li>
+            <li><a href="#home" style="text-decoration: none;">Home</a></li>
+            <li><a href="#about_us" style="text-decoration: none;">About</a></li>
+            <li><a href="#rooms" style="text-decoration: none;">Rooms</a></li>
+            <li><a href="#view_booking" style="text-decoration: none;">Book a View</a></li>
+            <li><a href="#contact_us" style="text-decoration: none;">Contact Us</a></li>
+
+
           </ul>
         </div>
       </nav>
     </header>
-
-    <section>
-
+    
+    <section class="about-section" id="about_us">
     <div class = "about">
       <div class="about-wrapper">
-        <div class="about-heading">
-        <h2  class = "heading">About Us</h2>
-        <p class = "para_1">We have been in the renting business for 12 years. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae accusantium quas corporis nisi facere ipsam quod esse reprehenderit veritatis consequuntur dolorem minus porro illum optio voluptate, sunt magni rerum, distinctio accusamus, animi natus? Repellat neque, esse illo, veritatis illum consequatur corrupti nostrum in eligendi necessitatibus eius repudiandae quo dolor, laudantium quibusdam doloribus rem nobis voluptatum maiores porro omnis magni ex? Vitae ex reprehenderit delectus consequuntur, nihil provident rerum quia facere ab iure tempore at doloribus eius aliquam sit alias? Reprehenderit.</p>
+        <div class = "about-text">
+          <h2 class = "head-about">About Us</h2>
+          <p class = "head para">
+            We have been In the Renting Business For 12 years
+            Lorem ipsum, dolor sit amet consectetur
+             adipisicing elit. Dolor soluta magni tempore 
+             fugiat quo sit assumenda, nihil, dicta quidem 
+             dolores quae ea laborum. Explicabo excepturi 
+             est odio sint sapiente. Assumenda illum quod 
+             voluptatibus quos expedita eligendi laborum 
+             consectetur labore, excepturi deserunt pariatur 
+             minus consequuntur dolor magnam! Placeat vel 
+             perspiciatis doloremque excepturi, tempora 
+             temporibus vitae sapiente amet distinctio 
+             aliquid ut cum nulla, a dolorem architecto 
+             nesciunt? Porro tempora possimus nobis odit 
+             reprehenderit laboriosam iste quasi?
+             Minima non sapiente aliquid tenetur id? 
+          </p>
 
         </div>
-
-
-        <div class="about-img">
-          <img src="./ASSETS/fotor-ai-20240517163256.jpg" class="img">
-        </div>
-      
       </div>
     </div>
     </section>
 
-   
+   <section id="rooms">
     <h2 class = "main-heading">Rooms Catalog</h2>
     <section class = "product-card">
       
@@ -198,11 +210,14 @@
       </div>
       
     </section>
+    </section>
 
+    <section id="view_booking">
     <div class="contact-heading-wrapper">
     <h2 class = "contact-heading">To Book A View</h2>
     <p></p>
     </div>
+
     <section class="contact-form">
       <div class="contact-wrapper">
 
@@ -213,36 +228,42 @@
         </div>
         <div class = "input">
         <label for="fname">First Name</label><br>
-        <input type="text" id="fname" size="30" required placeholder="Your First Name" style="border: 1px solid gray; border-radius: 5px; height : 40px; width: 280px">
+        <input type="text" id="fname" size="30" required placeholder="Your First Name" style="border: 1px solid gray; border-radius: 5px; height : 40px; width: 350px">
         </div>
         
 
         <div class = "input">
           <label for="sname">Second Name</label><br>
-          <input type="text" id="sname" size="30" required placeholder="Your Second Name" style="border: 1px solid gray; border-radius: 5px;height : 40px; width: 280px;">
+          <input type="text" id="sname" size="30" required placeholder="Your Second Name" style="border: 1px solid gray; border-radius: 5px;height : 40px; width: 350px;">
           </div>
           
            
           
           <div class = "input">
             <label for="mail">Email Address</label><br>
-            <input type="email" id="mail"  required placeholder="Your Email Address" style="border: 1px solid gray; border-radius: 5px;height : 40px; width: 280px;">
+            <input type="email" id="mail"  required placeholder="Your Email Address" style="border: 1px solid gray; border-radius: 5px;height : 40px; width: 350px;">
             </div>
             
             
             
             <div class = "input">
               <label for="message">Message</label><br>
-              <textarea rows="9" cols="35" id="message" required placeholder="enter your message" style="border: 1px solid gray; border-radius: 5px;">Enter Your Message </textarea>
+              <textarea rows="9" cols="45" id="message" required placeholder="enter your message" style="border: 1px solid gray; border-radius: 5px;">Enter Your Message </textarea>
               </div>
+
+            <div class="input">
+              <input type="submit" name="Submit" class="submit">
+
+            </div>
             
 
       
       </form>
       </div>
     </section>
+    </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact_us">
       <div class="footer-container">
           <h3>You Can Also Contact Us</h3>
           <p>To contact Urban Apartments, individuals may reach out by:</p>
@@ -251,7 +272,8 @@
               <li><strong>Email:</strong> <a href="mailto:urhaven@apartments.com">urhaven@apartments.com</a></li>
               <li><strong>Social Media:</strong>
                   <a href="https://www.facebook.com/urbanapartments" target="_blank">Facebook</a> |
-                  <a href="https://www.instagram.com/urbanapartments" target="_blank">Instagram</a>
+                  <a href="https://www.instagram.com/urbanapartments" target="_blank">Instagram</a>|
+                  <a href="#home">Back to top</a>
               </li>
           </ul>
       </div>
